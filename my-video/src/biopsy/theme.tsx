@@ -151,13 +151,14 @@ export const Glass: React.FC<{
   variant?: GlassVariant;
   style?: React.CSSProperties;
   highlight?: boolean;
+  radius?: number;
   children?: React.ReactNode;
-}> = ({ variant = "gl", style, highlight = true, children }) => (
+}> = ({ variant = "gl", style, highlight = true, radius = 44, children }) => (
   <div
     style={{
       position: "relative",
       overflow: "hidden",
-      borderRadius: 44,
+      borderRadius: radius,
       backdropFilter: "blur(32px) saturate(180%)",
       WebkitBackdropFilter: "blur(32px) saturate(180%)",
       ...glassStyles[variant],
