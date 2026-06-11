@@ -25,6 +25,7 @@
   "scripts": {
     "dev": "remotion studio",
     "build": "remotion bundle",
+    "render": "remotion render BiopsyReel out/biopsy_reel.mp4",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc"
   },
