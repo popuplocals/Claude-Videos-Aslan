@@ -27,6 +27,7 @@
     "build": "remotion bundle",
     "render": "remotion render BiopsyReel out/biopsy_reel.mp4",
     "render:insta": "remotion render BiopsyInstaReel out/biopsy_insta_reel.mp4",
+    "render:premium": "remotion render BiopsyPremiumReel out/biopsy_premium_reel.mp4",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc"
   },
