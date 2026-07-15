@@ -6,6 +6,7 @@ import { BiopsyInstaReel, INSTA_DURATION } from "./insta/BiopsyInstaReel";
 import { BiopsyPremiumReel, PREMIUM_DURATION } from "./premium/BiopsyPremiumReel";
 import { RedEyeAwareness, RED_EYE_DURATION } from "./redeye/RedEyeAwareness";
 import { RedEyeCauses, RED_EYE_CAUSES_DURATION } from "./redeye/RedEyeCauses";
+import { RedEyeCausesGlass, RED_EYE_CAUSES_GLASS_DURATION } from "./redeye/RedEyeCausesGlass";
 import { EyeSymptoms, EYE_SYMPTOMS_DURATION } from "./eyesymptoms/EyeSymptoms";
 import { PlaceholderEye } from "./eyesymptoms/PlaceholderEye";
 import { DryEyeSymptoms, DRY_EYE_DURATION } from "./dryeye/DryEyeSymptoms";
@@ -41,6 +42,14 @@ export const RemotionRoot: React.FC = () => {
         id="RedEyeCauses"
         component={RedEyeCauses}
         durationInFrames={RED_EYE_CAUSES_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="RedEyeCausesGlass"
+        component={RedEyeCausesGlass}
+        durationInFrames={RED_EYE_CAUSES_GLASS_DURATION}
         fps={30}
         width={1080}
         height={1920}
