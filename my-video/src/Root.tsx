@@ -8,10 +8,19 @@ import { RedEyeAwareness, RED_EYE_DURATION } from "./redeye/RedEyeAwareness";
 import { RedEyeCauses, RED_EYE_CAUSES_DURATION } from "./redeye/RedEyeCauses";
 import { EyeSymptoms, EYE_SYMPTOMS_DURATION } from "./eyesymptoms/EyeSymptoms";
 import { PlaceholderEye } from "./eyesymptoms/PlaceholderEye";
+import { DryEyeSymptoms, DRY_EYE_DURATION } from "./dryeye/DryEyeSymptoms";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="DryEyeSymptoms"
+        component={DryEyeSymptoms}
+        durationInFrames={DRY_EYE_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
       <Composition
         id="PlaceholderEye"
         component={PlaceholderEye}

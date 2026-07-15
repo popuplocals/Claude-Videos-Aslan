@@ -32,6 +32,7 @@
     "render:redeye": "remotion render RedEyeAwareness out/red-eye-awareness.mp4",
     "render:causes": "remotion render RedEyeCauses out/red-eye-causes.mp4",
     "render:eyesymptoms": "remotion render EyeSymptoms out/eye-symptoms.mp4",
+    "render:dryeye": "remotion render DryEyeSymptoms out/dry-eye-symptoms.mp4",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc"
   },
