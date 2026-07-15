@@ -4,10 +4,19 @@ import { MyComposition } from "./Composition";
 import { BiopsyReel, REEL_DURATION } from "./biopsy/BiopsyReel";
 import { BiopsyInstaReel, INSTA_DURATION } from "./insta/BiopsyInstaReel";
 import { BiopsyPremiumReel, PREMIUM_DURATION } from "./premium/BiopsyPremiumReel";
+import { RedEyeAwareness, RED_EYE_DURATION } from "./redeye/RedEyeAwareness";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="RedEyeAwareness"
+        component={RedEyeAwareness}
+        durationInFrames={RED_EYE_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
       <Composition
         id="BiopsyPremiumReel"
         component={BiopsyPremiumReel}
