@@ -5,10 +5,19 @@ import { BiopsyReel, REEL_DURATION } from "./biopsy/BiopsyReel";
 import { BiopsyInstaReel, INSTA_DURATION } from "./insta/BiopsyInstaReel";
 import { BiopsyPremiumReel, PREMIUM_DURATION } from "./premium/BiopsyPremiumReel";
 import { RedEyeAwareness, RED_EYE_DURATION } from "./redeye/RedEyeAwareness";
+import { EyeSymptoms, EYE_SYMPTOMS_DURATION } from "./eyesymptoms/EyeSymptoms";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="EyeSymptoms"
+        component={EyeSymptoms}
+        durationInFrames={EYE_SYMPTOMS_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
       <Composition
         id="RedEyeAwareness"
         component={RedEyeAwareness}
