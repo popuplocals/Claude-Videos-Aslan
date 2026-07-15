@@ -30,6 +30,7 @@
     "render:insta": "remotion render BiopsyInstaReel out/biopsy_insta_reel.mp4",
     "render:premium": "remotion render BiopsyPremiumReel out/biopsy_premium_reel.mp4",
     "render:redeye": "remotion render RedEyeAwareness out/red-eye-awareness.mp4",
+    "render:causes": "remotion render RedEyeCauses out/red-eye-causes.mp4",
     "render:eyesymptoms": "remotion render EyeSymptoms out/eye-symptoms.mp4",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc"
